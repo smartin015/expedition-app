@@ -139,9 +139,11 @@ max-time-minutes="40">
       and his cronies are huddled by a fire in the center of the room. You and
       your troupe are off in a corner, battered and wounded but still among the
       living.</p>
-    <instruction>All players now have 6 HP</instruction>
+    <instruction>
+      <p>All players now have 6 HP</p>
+    </instruction>
   </roleplay>
-  <roleplay title="Desperation" icon="bandit">
+  <roleplay title="Desperation" icon="adventurer">
     <p>You begin searching for some way out of this mess. You managed to slip
       your bonds - the bandits aren&apos;t very good at tying knots - and you
       immediately see two ways to ruin their day.</p>
@@ -151,7 +153,7 @@ max-time-minutes="40">
     <p>You also spy a giant rat in a cage, over in the corner. It looks malnourished
       and <em>very</em> hungry.</p>
     <choice text="Toss the powder keg into the fire.">
-      <roleplay title="Bang!" icon="bandit">
+      <roleplay title="Bang!" icon="adventurer">
         <p>The worry of setting off an explosion in a small, mostly-sealed room is
           dismissed from your mind as you grab the keg and lob it at the fire.</p>
         <p>You leap for cover as a blinding white light erupts, but are thrown to
@@ -162,7 +164,7 @@ max-time-minutes="40">
           what is apparently a cheese-based weather phenomenon.</p>
         <p>You slump back to the ground, and pass out.</p>
       </roleplay>
-      <roleplay title="A Cheesy Ending" icon="bandit">
+      <roleplay title="A Cheesy Ending" icon="adventurer">
         <p>Awakening some time later, you find yourself in Gruyere&apos;s apothecary
           house; the local herbalist took you in and treated your wounds, free of
           charge.</p>
@@ -175,25 +177,27 @@ max-time-minutes="40">
       <trigger>end</trigger>
     </choice>
     <choice text="Let the rat out of its cage.">
-      <roleplay title="Ratted Out" icon="bandit">
+      <roleplay title="Ratted Out" icon="adventurer">
         <p>As you draw back the rusty deadbolt and wrench the door open, the rat
           leaps out and immediately tackles one of the Brigands into the fire. They
           both thrash about the room for some time, and embers are strewn everywhere.
           Eventually the remaining three bandits slay the rampaging rat, but they&apos;re
           visibly shaken from seeing their comrade roasted alive.</p>
-        <instruction>In the next combat, all enemies start at 1/2 their health.</instruction>
+        <instruction>
+          <p>In the next combat, all enemies start at 1/2 their health.</p>
+        </instruction>
       </roleplay>
-      <combat icon="bandit">
+      <combat icon="adventurer">
         <e>Captain</e>
         <e>Brigand</e>
         <event on="win">
-          <roleplay title="Return" icon="bandit">
+          <roleplay title="Return" icon="adventurer">
             <p>You put the last of the bandits to death, amazed that you made it out
               of captivity alive.</p>
             <p>You&apos;ve found the cheese, and slain Albanus - time to head back to
               the villagers and collect your reward.</p>
           </roleplay>
-          <roleplay title="Return" icon="bandit">
+          <roleplay title="Return" icon="adventurer">
             <p>You emerge from the sewers, bloodied and battered. Villagers gather around
               and cheer as you share your good news.</p>
             <p>They offer a lifetime of cheese as a reward - but you politely decline.
@@ -202,7 +206,7 @@ max-time-minutes="40">
           <trigger>end</trigger>
         </event>
         <event on="lose">
-          <roleplay title="Ratted Out" icon="bandit">
+          <roleplay title="Ratted Out" icon="adventurer">
             <p>Despite your clever plan, the bandits recovered too quickly and overwhelmed
               your party.</p>
             <p>Your last sight is of the bandit captain Albanus, putting his sword through
